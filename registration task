@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration page</title>
+</head>
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  input,
+  select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(241, 214, 214);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+</style>
+
+<body>
+  <h1>Sign up</h1>
+  <h3>Please fill the form below to register your account</h3>
+  <div>
+    <form action="https://success.nitro007.repl.co/">
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" placeholder="Your name" required>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" placeholder="Your last name" required>
+
+      <label for="othername">Other Name:</label>
+      <input type="text" name="othername" placeholder="Your middle name">
+
+      <label for="pnumber">Phone Number:</label>
+      <input type="tel" name="pnumber" id="pnumber" placeholder="+234 123 456 7890" required>
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="" required><br>
+
+      <label for="gender">Gender:</label>
+      <select name="gender" id="">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" name="dob" id="" required><br>
+
+      <label for="fcolor">Favorite Color:</label>
+      <select name="fcolor" id="">
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+        <option value="burgundy">Burgundy</option>
+        <option value="brown">Brown</option>
+        <option value="green">Green</option>
+        <option value="orange">Orange</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="purple">purple</option>
+      </select><br>
+
+      <label for="psw">Password</label>
+      <input type="password" name="psw" id="" maxlength="12" minlength="8"
+        title="Must contain atleast one uppercase, one lowercase and one special character (!.,/?;:&%$£*)" required>
+
+      <label for="Cpsw">Confirm Password</label>
+      <input type="password" name="psw" id="" maxlength="12" minlength="8"
+        title="Must contain atleast one uppercase, one lowercase and one special character (!.,/?;:&%$£*)" required>
+
+      <input type="submit" value="Submit">
+
+      <footer>
+        <p>By clicking submit, you agree to our Terms & Conditions</p>
+        <p>Already have an account? <a href="login page.html">Login</a></p>
+      </footer>
+    </form>
+  </div>
+</body>
+
+</html>

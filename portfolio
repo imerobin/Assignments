@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/6d932035bd.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://cdn.wallpapersafari.com/96/65/cHp9r4.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  span {
+    color: yellowgreen;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  nav ul li a:hover {
+    color: yellowgreen;
+    transition: .4s;
+  }
+
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+  }
+
+  h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+  }
+
+  h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  h4 {
+    color: purple;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+
+  .about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+  }
+
+  .about img {
+    height: 450px;
+    width: 450px;
+    border-radius: 45px;
+  }
+
+  .about-text {
+    width: 550px;
+  }
+
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    color: #fcfc;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  .service {
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+  }
+
+  .title h2 {
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+
+  .card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: yellowgreen;
+  }
+</style>
+
+<body>
+  <header>
+  <div class="hero">
+    <nav>
+      <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#services">Services</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="./contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+      <h4>Hi there, my name is</h4>
+      <h1>Ime <span>Robin</span></h1>
+      <h3>I'm a fullstack web designer</h3>
+    </div>
+ </div>
+ </header>
+ <main>
+    <section class="about">
+      <div class="main">
+        <img src="https://i.postimg.cc/9QpPwVt9/img-5.jpg">
+        <div class="about-text">
+
+          <h2>About Me</h2>
+          <p>I am a graduate of Marine Geology from University of Calabar, Cross River State, Nigeria.
+            Currently a fullstack web developer intern with Zuri, sponsored by Ingressive4Good                     Initiative.
+            I aim to maximise the full potential of this internship by dedicating my time and                      resources where necessary
+            to becoming a great programmer someday.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="services">
+      <div class="title">
+        <h2>Our Services</h2>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Web Development</h5>
+          <div class="pra">
+            <p>All websites should be built with two main goals; Firstly, it must be responsive on all devices
+              and secondly must have speed.</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Priority</h5>
+          
+            <p>My foremost priority is getting certified in this internship and becoming a source of inspiration to
+              others
+              through mentorship</p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fas fa-bars"></i>
+          <h5>Skills</h5>
+          <div class="pra">
+            <p>A good grasp of frontend development, python and django.
+              A groundwater explorationist and a competent knowledge of geophysical survey and                       Interpretation.
+            </p>
+
+            <p style="text-align: center;">
+              <a class="button" href="#">Read More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>      
+  </main>
+  <footer>
+
+  </footer>
+  
+</body>
+
+</html>
