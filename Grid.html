@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .item1  { grid-area: header; }
+    .item2  { grid-area: right; }
+    .item3  { grid-area: left; }
+    .item4  { grid-area: main; }
+    .item5  { grid-area: footer; }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'header header header header right right'
+        'left left main main main main'
+        'left left footer footer footer footer';
+        gap: 10px;
+        width: 500px;
+        height: 50px;
+        
+    }
+    .grid-container > div   {
+        text-align: center;
+        padding: 5em;
+    }
+    .item1  {
+        background-color: orangered;
+    }
+    .item2  {
+        background-color: yellow;
+    }
+    .item3  {
+        background-color: green;
+    }
+    .item4  {
+        background-color: lightblue;
+    }
+    .item5  {
+        background-color: lightblue;
+    }
+    body    {
+        background-color: rgb(3, 40, 51);
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Right</div>
+        <div class="item3">Left</div>
+        <div class="item4">Main</div>
+        <div class="item5">Footer</div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>
